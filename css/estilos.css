@@ -18,7 +18,7 @@ button {
 
 main div div a:hover {
         height: 600px;
-        width: 400px;
+        width: auto;
         padding: 15px;
         transition: all 1s;
 }
@@ -48,6 +48,9 @@ img:hover {
     -o-transform: translate(10px);
 }
 
+
+}
+
 .transformacion1 {
     text-align: center;
 }
@@ -56,12 +59,12 @@ img:hover {
 @keyframes slidein {
     from {
       margin-left: 100%;
-      width: 300%
+      width: auto;
     }
   
     to {
       margin-left: 0%;
-      width: 100%;
+      width: auto;
 }}
 
 .degrade {
@@ -99,7 +102,7 @@ header {
     position: sticky;
     background-color: black;
     text-align: right;
-    width: 100%;
+    width: auto;
     height: 100%;
     top: 0%;
     left: 0%;
@@ -112,7 +115,7 @@ li {
     top: 0%;
     right: 0%;
     display: inline-block;
-    width: 5%;
+    width: auto;
     position: relative;
     font-size: 14px;
     padding: 5px;
@@ -125,7 +128,7 @@ li a {
 
 ul ul li {
     display: block;
-    width: 100%;
+    width: auto;
     right: 5px;
     text-align: center;
     padding: 10px;
@@ -245,40 +248,40 @@ footer {
 
 
 .menu_select {
-    width:97%;
-    float:right;
-    display:none;
-    position:relative;
+    width: 100%;
+    float: right;
+    display: none;
+    /* position: relative; */
 }
 
 #selectme {
-    width:80%;
+    width:100%;
     background-color:#000000;
     color:#ffffff;
-    padding:10px;
+    padding: 12px;
     font-weight: bold;
-    text-align:right;
-    cursor:pointer;
-    float:right;
+    text-align: right;
+    cursor: pointer;
+    float: right;
 }
 
 
 ul#options li {
-    width:98%;
-    float:right;
+    width:100%;
+    float:left;
 
 }
 
 .page-wrap {
-    min-height: 100vh;
+    min-height: 90vh;
     background-color: grey;
 }
 .page-wrap span  {
-    font-size: 200px;
+    font-size: 20px;
     font-weight: bold;
 }
 .page-wrap div  {
-    font-size: 40px;
+    font-size: 20px;
     font-weight: bold;
     color: white;
 }
@@ -288,8 +291,12 @@ ul#options li {
     border: 2px solid black;
     background-color: black;
     border-radius: 20px;
-    font-size: 40px;
+    font-size: 20px;
     color: white;
+}
+.display-1 {
+    font-size: calc(1em + 1vw);
+    text-align: left;
 }
 
 
@@ -304,12 +311,12 @@ nav .menu_select { display: inline; width:100%; background-color: #000; color:#F
         text-align: right;
     }
     .boxPrecios {
-        width: 30rem;
+        width: auto;
         height: auto;
 
     }
     .boxParrafo {
-        width: 30rem;
+        width: auto;
         height: 15rem;
     }
 }
@@ -320,21 +327,22 @@ nav .menu_select { display: inline; width:100%; background-color: #000; color:#F
         text-align: center;
     }
     .boxPrecios {
-        width: 30rem;
+        width: auto;
         height: auto;
     }
     .boxParrafo {
-        width: 30rem;
+        width: auto;
         height: 15rem;
-    }
-    .display-1  {
-        font-size: 5000px;
-        text-decoration: none;
-        
     }
 }
 
-@media (max-width: 376px) {
+@media (max-width: 375px) {
+    div ul li {
+        font-size: 8px;
+    }
+    h1 a{
+        font-size: 20px;
+    }
     .col {
         text-align: center;
     }
@@ -355,7 +363,7 @@ nav .menu_select { display: inline; width:100%; background-color: #000; color:#F
         font-size: 25px;
     }
     .paginaCovid {
-        width: 11.6rem;
+        width: auto;
         height: auto;
     }
     .row {
@@ -363,25 +371,25 @@ nav .menu_select { display: inline; width:100%; background-color: #000; color:#F
         width: auto;
     }
     .tituloSecundario {
-        width: 11.6rem;
-        text-decoration: underline;
+        width: auto;
         margin-bottom: 15px;
-        color: black;
+        color: white;
+        background-color: black;
         font-size: 20px;
     }
 
     header { 
-        width: 11.6rem;
+        width: auto;
         font-size: 15px;
     }
     .degrade {
-        width: 11.6rem;
+        width: auto;
     }
     img {
         justify-content: center;
         justify-self: center;
-        width: 150px;
-        height: 150px;
+        width: 200px;
+        height: 200px;
     }
     
     body h3 {
@@ -391,16 +399,11 @@ nav .menu_select { display: inline; width:100%; background-color: #000; color:#F
         font-size: 10px
     }
     footer {
-        width: 11.6rem;
+        width: auto;
         font-size: 10px;
     }
     li {
         font-size: 15px;
     }
-    .display-1 {
-        text-align: center;
-        
-        font-size: 17px;
-        font-weight: bold;
-    }
+    
 }
